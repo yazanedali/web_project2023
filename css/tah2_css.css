@@ -1,0 +1,33 @@
+body{
+
+    direction: rtl;
+}
+
+
+.logout{
+
+    background-color: #00B2AB;
+    height: 65px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Cairo', sans-serif;
+    margin: 10px
+
+}
+.logout ion-icon{
+    color: #fff;
+}
+
+.logout a{
+    color :#fff;
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: #fff;
+    background-color: #333;
+}

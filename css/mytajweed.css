@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: #00b2ab;
+    font-family: 'Cairo', sans-serif;
+    font-size: 30pt;
+}
+
+
+.logout{
+    color: #fff;
+    background-color: #00B2AB;
+    height: 65px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Cairo', sans-serif;
+    margin: 10px
+
+}
+
+.logout a{
+    color :#fff;
+}
+
+.logout:hover {
+    color: #fff;
+    background-color: #333;
+}

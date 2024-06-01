@@ -1,0 +1,51 @@
+.image-container {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 700px) {
+    .aa {
+        position: static; /* or any other positioning that suits your design */
+        max-width: 100%; /* Allow the text to take the full width */
+        margin: 10px; /* Add margin to the text for better readability */
+    }
+
+    .image-container {
+        max-width: 100%; /* Make the image take the full width */
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .head {
+        flex-direction: column; /* Change to a column layout for smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .head .item {
+        width: 100%; /* Make items take full width in a column layout */
+        margin: 10px 0; /* Add spacing between items in a column layout */
+    }
+}
+
+
+.logout{
+
+    background-color: #ff3307;
+    height: 65px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.logout:hover {
+    background-color: #EE816A;
+}

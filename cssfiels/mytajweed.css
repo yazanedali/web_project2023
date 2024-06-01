@@ -1,0 +1,238 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+/* variable css */
+:root{
+    --header-height: 4rem;
+    --first-color: hsl(176,88%,27%);
+    --first-color-alt: hsl(129,44%,94%);
+    --second-color: hsl(34,94%,87%);
+    --title-color:  hsl(0,0%,13%);
+    --text-color: hsl(154,13%,32%);
+    --text-color-light: hsl(60,1%,56%);
+    --body-color: hsl(0,0%,100%);
+    --container-color: hsl(0,0%,93%);
+    --border-color: hsl(129,36%,85%);
+    --border-color-alt: hsl(113,15%,90%);
+
+
+    --body-font: 'Lato',sans-serif;
+    --second-font: 'League Spartan', sans-serif;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2,75rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1.375rem;
+    --large-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size:0.75rem;
+    --tiny-font-size: 0.6875rem;
+
+
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+
+
+    --transition: cubic-bezier(0,0,0.05,1)
+
+}
+@media screen and (max-width: 1200px) {
+
+    :root{
+
+    }
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color:var(--text-color);
+    font-family: var(--body-font) ;
+    font-size: var(--normal-font-size) ;
+    font-weight: var(--weight-400) ;
+    background-image: url("../img/bg.jpg") !important;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    display: block;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+h2
+{
+    font-family: var(--second-font) ;
+    color:var(--title-color);
+    font-weight: var(--weight-600);
+
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: .75rem;
+
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+
+
+
+
+
+
+.product__item{
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    transition: all 0.2s var(--transition);
+}
+.product__banner{
+    padding: 0.625rem 0.75rem 0.75rem;
+}
+.product__banner,
+.product__images{
+    position: relative;
+}
+
+.product__images{
+    display: block;
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
+.product__img{
+    vertical-align: middle;
+    transition: all 1.5s var(--transition);
+}
+
+.product__item:hover .product__img{
+    transform: scale(1.1);
+}
+
+.product__img.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product__actions{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+
+
+
+.product__title{
+    font-size: var(--normal-font-size);
+    margin-block: 0.75rem 0.5rem;
+}
+
+.product__rating{
+    color: hsl(42,100%,50%);
+    font-size: var(--smaller-font-size);
+    margin-bottom: 0.75rem;
+}
+
+
+
+
+
+
+.tab__item:not(.active-tab){
+    display: none;
+}
+
+.product__img.hover,
+.product__actions,
+.action__btn::before,
+.action__btn::after,
+.product__item:hover  .product__img.default {
+    opacity: 0;
+}
+
+.product__item:hover{
+    box-shadow: 0 0 10px hsla(0 , 0% , 0% , 0.1);
+}
+
+.product__item:hover .product__img.hover,
+.product__item:hover .product__actions,
+.action__btn:hover::before,
+.action__btn:hover::after{
+    opacity: 1;
+}
+
+
+
+.product__title{
+    font-family: sans-serif;
+    font-size: 16pt;
+    color: #00b2ab;
+    text-align: center;
+}
+
+
+.line{
+    width: 100%;
+    height: 40px;
+    background: url("../img/line.png");
+}
+
+
+
+
+.products__container{
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    top: 70px;
+
+
+}
+
+
+
+
+
+
+

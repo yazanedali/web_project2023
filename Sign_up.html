@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="stylesheet" href="cssfiels/css_signup.css">
+        <title>Registration</title>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="form-box">
+
+                <h1>وَلَقَدْ يَسَّرْنَا القرآن لِلذِّكْرِ فَهَلْ مِنْ
+                    مُدَّكِرٍ</h1>
+
+                <div class="login-container" id="login">
+                    <form action="./php/signup.php" method="POST">
+                        <input type="hidden" name="role" value="admin">
+                        <div class="top">
+                            <span>إذا عندك حساب<a href="index.html">سجل
+                                    الدخول</a></span>
+                            <header>إنشاء حساب</header>
+                        </div>
+                        <div class="two-forms">
+
+                            <div class="input-box">
+                                <input name="first_name" type="text"
+                                    class="input-field"
+                                    placeholder="الإسم الأول"
+                                    required>
+
+                                <ion-icon name="person"></ion-icon>
+                            </div>
+                            <div class="input-box">
+                                <input name="last_name" type="text"
+                                    class="input-field"
+                                    placeholder="الإسم الأخير" required
+                                    >
+
+                                <ion-icon name="person"></ion-icon>
+                            </div>
+
+                        </div>
+                        <div class="input-box">
+                            <input name="email" type="email" class="input-field"
+                                placeholder="البريد الإلكتروني" required
+                                >
+
+                            <ion-icon name="mail"></ion-icon>
+
+                        </div>
+                        <div class="input-box" hidden>
+
+                            <ion-icon name="mail"></ion-icon>
+
+                        </div>
+                        <div class="input-box">
+                            <input name="password" type="password"
+                                class="input-field" placeholder="كلمة السر"
+                                required >
+
+                            <ion-icon name="lock-closed"></ion-icon>
+
+                        </div>
+                        <div class="input-box">
+                            <input name="cpassword" type="password"
+                                class="input-field"
+                                placeholder="إعادة كلمة السر" required
+                                >
+
+                            <ion-icon name="lock-closed"></ion-icon>
+
+                        </div>
+                        <div class="input-box">
+
+                            <input type="submit" name="btn_signup"
+                                class="submit" value="إنشاء">
+                            <ion-icon name="add-circle"></ion-icon>
+
+                        </div>
+                        <div class="two-col">
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>
